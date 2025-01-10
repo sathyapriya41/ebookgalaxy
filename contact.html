@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Support - nexus play</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        color: #fff;
+        overflow: hidden;
+    }
+    
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url( https://selfpublishing.com/wp-content/uploads/2020/11/How-to-Publish-an-eBook-Step-By-Step-eBook-Publishing.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: gradient 9s ease infinite;
+        z-index: -1;
+    }
+    
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    .container {
+        position: relative;
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        margin-top: 20px;
+    }
+    
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #ff4081;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #ff1f5b;
+    }</style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Support</h1>
+        <p>If you have any questions or need assistance, please reach out to us!</p>
+        
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
